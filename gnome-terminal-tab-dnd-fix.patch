@@ -1,0 +1,11 @@
+--- gnome-terminal-2.31.3/src/terminal-window.c	2010-06-28 12:15:15.925025809 -0400
++++ gnome-terminal-2.31.3.x/src/terminal-window.c	2010-06-28 12:14:30.788011073 -0400
+@@ -2420,7 +2420,7 @@
+   terminal_window_remove_screen (source_window, screen);
+     
+   /* Now we can safely remove the screen from the container and let the container die */
+-  gtk_container_remove (GTK_CONTAINER (screen_container), GTK_WIDGET (screen));
++  gtk_container_remove (GTK_CONTAINER (gtk_widget_get_parent (GTK_WIDGET (screen))), GTK_WIDGET (screen));
+   g_object_unref (screen_container);
+ 
+   terminal_window_add_screen (dest_window, screen, dest_position);

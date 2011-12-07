@@ -1,0 +1,12 @@
+diff -up gnome-terminal-2.29.6/help/gnome-terminal.omf.in.doc-category gnome-terminal-2.29.6/help/gnome-terminal.omf.in
+--- gnome-terminal-2.29.6/help/gnome-terminal.omf.in.doc-category	2010-05-03 19:51:12.020182801 -0400
++++ gnome-terminal-2.29.6/help/gnome-terminal.omf.in	2010-05-03 19:51:23.022946664 -0400
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" standalone="no"?>
+ <omf>
+   <resource>
+-    <subject category="GNOME|Applications|System Tools"/>
++    <subject category="GNOME|System"/>
+     <type>user's guide</type>
+     <relation seriesid="d7834910-40e7-11d6-87e4-aa5f78e530ae"/>
+     <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
